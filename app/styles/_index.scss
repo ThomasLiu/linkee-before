@@ -1,0 +1,331 @@
+
+
+
+.index-logo{
+  width: 204px;
+  height: 144px;
+}
+.index-logo-container{
+  @include gradient_225($bule,$bule_drk);
+  position: relative;
+}
+.index-nav{
+  position: absolute;
+  right: 87px;
+  top: 56px;
+  &.nav-pills{
+    > li{
+      text-align: center;
+      > a{
+        text-align: center;
+        font-size: $px12;
+        font-weight: lighter;
+        color: $white;
+        padding: $px11 $px29;
+        line-height: $px17;
+        border-bottom: $px1 solid $white_20p;
+        border-radius: 0;
+        letter-spacing: $px6;
+        &:hover,
+        &:focus {
+          color: $white;
+          background-color: $bule_light;
+        }
+      }
+      &.active{
+        > a{
+          background: none;
+          border-bottom: $px1 solid $bule_light;
+          &:hover,
+          &:focus {
+            color: $white;
+            background-color: $bule_light;
+          }
+        }
+      }
+      + li {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.index-jumbotron{
+  background-color: $bule;
+  color: $white;
+  margin-bottom: 0;
+  h1{
+    font-size: $px68;
+    margin: $px142 0 $px65;
+    line-height: $px95;
+  }
+  p{
+    font-weight: lighter;
+    line-height: $px29;
+    font-size: $px21;
+    margin: 0 0 $px194;
+  }
+}
+.index-theme-container{
+  margin: 0;
+  padding: 0;
+  div{
+    margin: 0;
+    padding: 0;
+  }
+  > div > div{
+    width: 50%;
+  }
+  .index-theme-img-div{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: $px442;
+  }
+  h2{
+    color: $white_light;
+    line-height: $px56;
+    font-size: $px40;
+    margin: $px70 $px95 $px26;
+    font-family: PingFangSC-Semibold;
+  }
+  p{
+    line-height: $px22;
+    font-size: $px18;
+    margin: 0 $px95 $px70;
+    font-family: Helvetica-Bold;
+    font-weight: bolder;
+  }
+  .index-theme-item-2nd{
+    > div{
+      float: right;
+    }
+  }
+}
+
+.index-apply-container{
+  padding: 0 $px163;
+  background-color: $bule_drk2;
+  color: $white;
+  .index-apply-form-group{
+    > div{
+      width: 33%;
+      text-align: center;
+      float: left;
+      position: relative;
+      padding: 0 $px15;
+    }
+    &.full{
+      > div {
+        width: 100%;
+      }
+    }
+  }
+  h2{
+    line-height: $px62;
+    font-size: $px44;
+    margin: $px163 0 $px26;
+    text-align: center;
+    font-family: PingFangSC-Light;
+    letter-spacing: $px20;
+  }
+  .control-label{
+    font-size: $px23;
+    line-height: $px24;
+  }
+  .form-control{
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: $px1 solid $white;
+    font-size: $px30;
+    line-height: $px35;
+    text-align: center;
+    font-family: AppleSystemUIFont;
+    margin-bottom: $px44;
+    &:focus {
+      @include box-shadow(none);
+    }
+  }
+  .index-theme-submit-btn{
+    background-color: $white_40p;
+    color: $white;
+    border-radius: 0;
+    border: $px1 solid $white;
+    font-size: $px25;
+    line-height: $px27;
+    padding: $px10 $px35;
+    margin-bottom: $px163;
+  }
+}
+.index-cooperate-container{
+  text-align: center;
+  h2{
+    font-size: $px44;
+    line-height: $px62;
+    color: $bule_drk3;
+    margin: $px53 0 $px48;
+  }
+  .row {
+    > div {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: $px130;
+      width: $px130;
+      display: inline-block;
+      margin: 0 $px26 $px62;
+    }
+  }
+}
+.index-foot-container{
+  background-color: $bule_drk2;
+  padding: $px46 $px74;
+  .row{
+    > div{
+      width: 50%;
+      text-align: right;
+      color: $white_light2;
+
+      p{
+        margin: 0;
+        padding: 0;
+        font-size: $px14;
+        line-height: $px30;
+        font-family: PingFangSC-Regular;
+      }
+      .index-foot-name{
+        color: $white;
+        text-align: left;
+        font-size: $px20;
+        line-height: $px23;
+        margin-top: $px29;
+      }
+      .index-foot-email{
+        color: $bule_light2;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #indexNavMenu,.index-cooperate-container{
+    display: none;
+  }
+  .index-theme-container {
+    > div > div {
+      width: 100%;
+    }
+  }
+  .index-apply-container {
+    .index-apply-form-group {
+      > div {
+        width: 50%;
+      }
+    }
+  }
+  .index-foot-container{
+    padding: 0;
+    .row{
+      > div{
+        width: 100%;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        p{
+          font-size: $px14;
+          line-height: $px48;
+        }
+        .index-foot-name{
+          background-color: $white;
+          color: $black;
+          padding: $px68 0 0;
+          font-size: $px64;
+          line-height: $px90;
+          text-align: center;
+        }
+        .index-foot-address{
+          margin-top: $px58;
+        }
+        .index-foot-email{
+          margin-bottom: $px300;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .index-logo-container{
+    text-align: center;
+  }
+  .index-jumbotron{
+    h1{
+      margin: $px32 0 $px70;
+    }
+    p{
+      margin: 0 0 $px35;
+    }
+  }
+  .index-theme-container{
+    .index-theme-img-div{
+      min-height: $px350;
+    }
+    h2{
+      margin: $px17 $px12;
+    }
+    p{
+      font-family: Helvetica;
+      font-weight: bold;
+      border-bottom: $px1 solid $white_light;
+      padding: 0 0 $px17;
+      margin: 0 $px12 $px21;
+    }
+  }
+  .index-apply-container {
+    padding: 0 $px30;
+    .index-apply-form-group {
+      > div {
+        width: 100%;
+        padding : 0 $px27;
+      }
+    }
+    h2{
+      margin: $px65 0 $px46;
+      font-size: $px25;
+      line-height: $px34;
+    }
+    .control-label{
+      font-size: $px11;
+      line-height: $px13;
+    }
+    .form-control{
+      font-size: $px14;
+      line-height: $px17;
+      padding: $px9 0;
+      margin-bottom: $px25;
+    }
+    .index-theme-submit-btn{
+      padding: $px6 $px20;
+      border: none;
+      font-size: $px12;
+      line-height: $px17;
+      margin-bottom: $px82;
+    }
+  }
+  .index-foot-container{
+    .row{
+      > div{
+        text-align: left;
+        p{
+          padding-left: $px12;
+          padding-right: $px12;
+          font-size: $px12;
+          line-height: $px50;
+        }
+
+      }
+    }
+  }
+
+}

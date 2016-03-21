@@ -1,0 +1,99 @@
+// Variables
+// -------------------------------------------/
+
+$bule_light: #31BEF8;
+$bule_light2: #4A90E2;
+$bule:                 #1A4366;
+$bule_drk:                 #0B2036;
+$bule_drk2:                 #101C33;
+$bule_drk3:                 #293C50;
+
+
+
+$white_light: #E7E7E7;
+$white_light2: #C4C4C4;
+$white: #fff;
+$white_20p: rgba(255,255,255,.2);
+$white_40p: rgba(255,255,255,.4);
+
+$black: #000;
+
+
+
+$font-size-base: 14px;
+$px1 : 0.05rem;
+$px2 : 0.1rem;
+$px3 : 0.15rem;
+$px6 : 0.3rem;
+$px8 : 0.4rem;
+$px9 : 0.45rem;
+$px10 : 0.5rem;
+$px11 : 0.5rem;
+$px12 : 0.6rem;
+$px13 : 0.65rem;
+$px14 : 0.7rem;
+$px15 : 0.75rem;
+$px17 : 0.85rem;
+$px18 : 0.9rem;
+$px20 : 1rem;
+$px21 : 1.05rem;
+$px22 : 1.1rem;
+$px23 : 1.15rem;
+$px24 : 1.2rem;
+$px25 : 1.25rem;
+$px26 : 1.3rem;
+$px27 : 1.35rem;
+$px29 : 1.45rem;
+$px30 : 1.5rem;
+$px32 : 1.6rem;
+$px34 : 1.65rem;
+$px35 : 1.75rem;
+$px40 : 2rem;
+$px44 : 2.2rem;
+$px45 : 2.25rem;
+$px46 : 2.3rem;
+$px48 : 2.4rem;
+$px49 : 2.45rem;
+$px50 : 2.5rem;
+$px53 : 2.65rem;
+$px56 : 2.8rem;
+$px58 : 2.9rem;
+$px62 : 3.1rem;
+$px64 : 3.2rem;
+$px65 : 3.25rem;
+$px68 : 3.4rem;
+$px70 : 3.5rem;
+$px74 : 3.7rem;
+$px78 : 3.9rem;
+$px82 : 4.1rem;
+$px90 : 4.5rem;
+$px95 : 4.75rem;
+$px130 : 6.5rem;
+$px142 : 7.1rem;
+$px163: 8.15rem;
+$px194 : 9.7rem;
+$px200 : 10rem;
+$px240 : 12rem;
+$px300 : 15rem;
+$px350 : 17.5rem;
+$px442 : 22.1rem;
+$px550 : 27.5rem;
+
+// end variables ------------/
+
+
+// Mixins
+// -------------------------------------------/
+
+
+@mixin gradient_225($start_color,$end_color) {
+  background: -moz-linear-gradient(225deg, $start_color 0%, $end_color 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, $end_color), color-stop(100%, $start_color)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(225deg, $start_color 0%, $end_color 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(225deg, $start_color 0%, $end_color 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(225deg, $start_color 0%, $end_color 100%); /* ie10+ */
+  background: linear-gradient(225deg, $start_color 0%, $end_color 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start_color', endColorstr='$end_color', GradientType=1); /* ie6-9 */
+}
+
+// end mixins ------------/
